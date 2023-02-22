@@ -1,0 +1,38 @@
+{
+  "seller": [
+    {
+      "name": "Jamaes",
+      "email": "jame@gmail.com",
+      "password": "3333",
+      "id": 1
+    },
+    {
+      "name": "Ye htet",
+      "password": "yha999",
+      "email": "yha@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Tun Tun",
+      "password": "tuntun123",
+      "email": "tuntun@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Aye Aye",
+      "password": "ayeaye777",
+      "email": "ayeaye@gmail.com",
+      "id": 4
+    },
+    {
+      "password": "yha999",
+      "email": "yha@gmail.com",
+      "id": 5
+    },
+    {
+      "password": "dddd",
+      "email": "ddd@gmail.com",
+      "id": 6
+    }
+  ]
+}
