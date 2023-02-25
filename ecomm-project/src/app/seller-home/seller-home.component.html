@@ -1,5 +1,6 @@
 <div class="product-list">
     <h1>All product List</h1>
+    <p class="message">{{productMessage}}</p>
     <table>
         <thead>
             <th>Image</th>
@@ -8,6 +9,7 @@
            <th>Color</th>
            <th>Category</th>
            <th>Description</th>
+           <th></th>
         </thead>
         <tbody>
             <tr *ngFor="let item of productList">
@@ -17,6 +19,11 @@
                 <td>{{item.color}}</td>
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
+                <td>
+                    <fa-icon [icon]="editIcon" class="update-link"
+             routerLink="/seller-update-product/{{item.id}}"></fa-icon>   
+                  <fa-icon [icon]="icon" (click)="deleteProduct(item.id)"></fa-icon>  
+                </td>
             </tr>
         </tbody>
     </table>

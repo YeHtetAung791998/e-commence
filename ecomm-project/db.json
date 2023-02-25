@@ -45,9 +45,18 @@
       "price": "200000",
       "color": "yellow",
       "category": "tee",
-      "description": "new tee",
+      "description": "new tee arrive",
       "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
       "id": 2
+    },
+    {
+      "name": "NASA1",
+      "price": "300000",
+      "color": "white",
+      "category": "hoodie",
+      "description": "nasa new hoodie in winter",
+      "image": "https://cdn11.bigcommerce.com/s-ggndxwgcpk/images/stencil/1280x1280/products/323/1483/NASA001H-WHIT__38427.1605714504.jpg?c=2",
+      "id": 4
     }
   ]
 }
