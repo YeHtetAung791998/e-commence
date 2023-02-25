@@ -29,5 +29,25 @@
       "email": "ddd@gmail.com",
       "id": 6
     }
+  ],
+  "products": [
+    {
+      "name": "BATHING APE",
+      "price": "400000",
+      "color": "blue",
+      "category": "tee",
+      "description": "latest",
+      "image": "https://images.stockx.com/images/BAPE-ABC-Camo-By-Bathing-Ape-Tee-White-Blue.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1656920293&q=75",
+      "id": 1
+    },
+    {
+      "name": "Drew House ",
+      "price": "200000",
+      "color": "yellow",
+      "category": "tee",
+      "description": "new tee",
+      "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
+      "id": 2
+    }
   ]
 }
