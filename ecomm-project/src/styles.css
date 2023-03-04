@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     font-family: sans-serif;
+    background-image: linear-gradient(to right top, #ffa0f5, #ceb2ff, #92c2ff, #56cdff, #36d3f8);
 }
 
 .container{
@@ -35,3 +36,14 @@ body {
 .message{
     color: green;
 }
+
+.carousel-caption{
+    background-color: #00000000;
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border: 5px;
+}
+
