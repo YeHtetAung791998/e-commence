@@ -1,9 +1,28 @@
 <div class="user-auth">
-    <h1>User Sign-up</h1>
-    <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
-        <input type="text" class="form-input" placeholder="Enter User Name" name="name" ngModel>
-        <input type="email" class="form-input" placeholder="Enter User Email" name="email" ngModel>
-        <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel>
-        <button  class="form-button">Sign Up</button>
-    </form>
+    <div class="user-signup" *ngIf="!showLogin">
+        <h1>User Sign-up</h1>
+        <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
+            <input type="text" class="form-input" placeholder="Enter User Name" name="name" ngModel>
+            <input type="email" class="form-input" placeholder="Enter User Email" name="email" ngModel>
+            <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel>
+            <button  class="form-button">Sign Up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already have an account?Click to login </a>
+        </form>
+    </div>
+
+    <div class="user-login" *ngIf="showLogin">
+        <h1>User Login</h1>
+        <form #userLogIn="ngForm" class="common-form" (ngSubmit)="logIn(userLogIn.value)">
+            <input type="email" class="form-input" placeholder="Enter User Email" name="email" ngModel #email="ngModel" required email>
+            <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please enter valid email</span></p>
+            <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel #password="ngModel" required minlength="2" maxlength="8">
+            <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please enter valid password</span></p>
+
+            <button  class="form-button" [disabled]="userLogIn.invalid">Log In</button>
+            <a class="auth-toggle-link" (click)="openSignup()">Already have an account?Click to Signup </a>
+        </form>
+    </div>
+   
 </div>
+
+

@@ -17,8 +17,9 @@ export class HeaderComponent implements OnInit{
   constructor(private route:Router,private product:ProductService){}
   ngOnInit(): void {
    this.route.events.subscribe((val:any) => {
-   
+    
       if(val.url){
+        console.log("url")
           if(localStorage.getItem('seller') && val.url.includes('seller')){
                
                 this.menuType = 'seller'
@@ -28,12 +29,13 @@ export class HeaderComponent implements OnInit{
                   console.warn(sellerData)
                   this.sellerName = sellerData.name;
                 }
-                else if(localStorage.getItem('user')){
-                  let userStore = localStorage.getItem('user');
-                  let userData = userStore && JSON.parse(userStore);
-                  this.userName = userData.name;
-                  this.menuType = 'user'
-                }
+               
+          }
+          else if(localStorage.getItem('user')){
+            let userStore = localStorage.getItem('user');
+            let userData = userStore && JSON.parse(userStore);
+            this.userName = userData.name;
+            this.menuType = 'user'
           }
           else{
             this.menuType = 'default'

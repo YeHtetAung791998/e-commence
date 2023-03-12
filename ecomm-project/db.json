@@ -89,6 +89,12 @@
       "email": "jimmy@gmail.com",
       "password": "jimmy6767",
       "id": 2
+    },
+    {
+      "name": "Bunny",
+      "email": "bunny@gmail.com",
+      "password": "bunny666",
+      "id": 3
     }
   ]
 }
