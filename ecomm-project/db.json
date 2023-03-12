@@ -25,14 +25,70 @@
       "id": 4
     },
     {
-      "password": "yha999",
-      "email": "yha@gmail.com",
-      "id": 5
-    },
-    {
       "password": "dddd",
       "email": "ddd@gmail.com",
       "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "BATHING APE",
+      "price": "400000",
+      "color": "blue",
+      "category": "tee",
+      "description": "latest",
+      "image": "https://images.stockx.com/images/BAPE-ABC-Camo-By-Bathing-Ape-Tee-White-Blue.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1656920293&q=75",
+      "id": 1
+    },
+    {
+      "name": "Drew House ",
+      "price": "200000",
+      "color": "yellow",
+      "category": "tee",
+      "description": "new tee arrive",
+      "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
+      "id": 2
+    },
+    {
+      "name": "NASA1",
+      "price": "300000",
+      "color": "white",
+      "category": "hoodie",
+      "description": "nasa new hoodie in winter",
+      "image": "https://cdn11.bigcommerce.com/s-ggndxwgcpk/images/stencil/1280x1280/products/323/1483/NASA001H-WHIT__38427.1605714504.jpg?c=2",
+      "id": 4
+    },
+    {
+      "name": "Catcus jack X kaws",
+      "price": "300000",
+      "color": "white",
+      "category": "tee",
+      "description": "best collab of kaws and cactus jack",
+      "image": "https://cdn.shopify.com/s/files/1/0590/6261/6229/products/travis-scott-cactus-jack-kaws-for-fragment-tee-grey_2.jpg?v=1637917907&width=1024",
+      "id": 5
+    },
+    {
+      "name": "Air jordan X dior",
+      "price": "400000",
+      "color": "white and black",
+      "category": "sneaker",
+      "description": "best seller",
+      "image": "https://i.insider.com/5e8630052d654f3d70002664?width=700",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Ye Htet Aung",
+      "email": "yehtetaung791998@gmail.com",
+      "password": "yha777",
+      "id": 1
+    },
+    {
+      "name": "Jimmy",
+      "email": "jimmy@gmail.com",
+      "password": "jimmy6767",
+      "id": 2
     }
   ]
 }
