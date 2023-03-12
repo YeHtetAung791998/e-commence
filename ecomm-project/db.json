@@ -76,5 +76,19 @@
       "image": "https://i.insider.com/5e8630052d654f3d70002664?width=700",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "name": "Ye Htet Aung",
+      "email": "yehtetaung791998@gmail.com",
+      "password": "yha777",
+      "id": 1
+    },
+    {
+      "name": "Jimmy",
+      "email": "jimmy@gmail.com",
+      "password": "jimmy6767",
+      "id": 2
+    }
   ]
 }

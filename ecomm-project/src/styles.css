@@ -2,6 +2,9 @@
 body {
     font-family: sans-serif;
     background-image: linear-gradient(to right top, #ffa0f5, #ceb2ff, #92c2ff, #56cdff, #36d3f8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
 }
 
 .container{
