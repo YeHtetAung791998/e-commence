@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ export class HeaderComponent implements OnInit{
   searchResult:any;
   search:any;
   userName:string = "";
+  cartItems =0;
   constructor(private route:Router,private product:ProductService){}
   ngOnInit(): void {
    this.route.events.subscribe((val:any) => {
@@ -42,17 +44,30 @@ export class HeaderComponent implements OnInit{
           
           }
       }
+   });
+
+  //  let cartData = localStorage.getItem('localCart');
+  //  if(cartData){
+  //   this.cartItems = JSON.parse(cartData).length;
+  //  }
+
+   this.product.cartData.subscribe(data =>{
+    console.warn('cart data',data)
+         this.cartItems = data.length;
    })
+
   }
 
     logout(){
       localStorage.removeItem('seller')
       this.route.navigate(['/'])
+
     }
 
     userLogout(){
       localStorage.removeItem('user')
       this.route.navigate(['/user-auth'])
+      this.product.cartData.emit([]);
     }
 
     searchProduct(query:KeyboardEvent){

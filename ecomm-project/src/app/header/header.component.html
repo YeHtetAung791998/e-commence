@@ -22,7 +22,7 @@
             <li><a routerLink="/user-auth">{{userName | titlecase}}</a></li>
             <li><a routerLink="/user-auth">Login/Signup</a></li>
             <li><a href="#" (click)="userLogout()">Logout</a></li>
-            <li><a href="#">Cart(0)</a></li>
+            <li><a href="#">Cart({{cartItems}})</a></li>
         </ul>
 
         <ul *ngIf="menuType === 'seller'">
