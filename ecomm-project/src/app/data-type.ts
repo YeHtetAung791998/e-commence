@@ -28,9 +28,24 @@ export interface cart{
     description:string,
     image:string,
     id:number | undefined
-   
     userId:number,
    
     productId:number
+}
+
+export interface priceSummary{
+    price:number,
+    discount:number,
+    tax:number,
+    delivery:number,
+    total:number
+}
+
+export interface order{
+    email:string,
+    address:string,
+    contact:string,
+    totalPrice:number,
+    userId:number
 }
 
