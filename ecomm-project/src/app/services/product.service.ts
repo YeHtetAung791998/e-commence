@@ -93,4 +93,10 @@ cartData = new EventEmitter<product[] | []>();
   orderNow(data:order){
     return this.http.post<any>('http://localhost:3000/orders',data);
   }
+
+  orderList(){
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore)[0];
+    return this.http.get('http://localhost:3000/orders=',userData.id);
+  }
 }
