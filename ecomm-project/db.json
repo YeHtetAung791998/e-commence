@@ -117,66 +117,6 @@
       "category": "tee",
       "description": "new tee arrive",
       "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 2,
-      "id": 4
-    },
-    {
-      "name": "Drew House ",
-      "price": "200000",
-      "color": "yellow",
-      "category": "tee",
-      "description": "new tee arrive",
-      "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 2,
-      "id": 6
-    },
-    {
-      "name": "NASA1",
-      "price": "300000",
-      "color": "white",
-      "category": "hoodie",
-      "description": "nasa new hoodie in winter",
-      "image": "https://cdn11.bigcommerce.com/s-ggndxwgcpk/images/stencil/1280x1280/products/323/1483/NASA001H-WHIT__38427.1605714504.jpg?c=2",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 4,
-      "id": 7
-    },
-    {
-      "name": "Catcus jack X kaws",
-      "price": "300000",
-      "color": "white",
-      "category": "tee",
-      "description": "best collab of kaws and cactus jack",
-      "image": "https://cdn.shopify.com/s/files/1/0590/6261/6229/products/travis-scott-cactus-jack-kaws-for-fragment-tee-grey_2.jpg?v=1637917907&width=1024",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 5,
-      "id": 9
-    },
-    {
-      "name": "BATHING APE",
-      "price": "400000",
-      "color": "blue",
-      "category": "tee",
-      "description": "latest",
-      "image": "https://images.stockx.com/images/BAPE-ABC-Camo-By-Bathing-Ape-Tee-White-Blue.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1656920293&q=75",
-      "quantity": 2,
-      "userId": 1,
-      "productId": 1,
-      "id": 10
-    },
-    {
-      "name": "Drew House ",
-      "price": "200000",
-      "color": "yellow",
-      "category": "tee",
-      "description": "new tee arrive",
-      "image": "http://cdn.shopify.com/s/files/1/0062/3925/6694/products/76ba54ce-58fe-4e51-8bf7-703bfe4a691d_1024x1024.jpg?v=1602306207",
       "quantity": 2,
       "userId": 2,
       "productId": 2,
@@ -193,6 +133,18 @@
       "userId": 2,
       "productId": 5,
       "id": 12
+    },
+    {
+      "name": "BATHING APE",
+      "price": "400000",
+      "color": "blue",
+      "category": "tee",
+      "description": "latest",
+      "image": "https://images.stockx.com/images/BAPE-ABC-Camo-By-Bathing-Ape-Tee-White-Blue.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1656920293&q=75",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 13
     }
   ],
   "orders": [
@@ -203,22 +155,6 @@
       "totalPrice": 700100,
       "userId": 2,
       "id": 1
-    },
-    {
-      "email": "yehtetaung791998@gmail.com",
-      "address": "Yangon",
-      "contact": "09857237492834",
-      "totalPrice": 1800100,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "email": "yehtetaung791998@gmail.com",
-      "address": "yangon",
-      "contact": "09889879798",
-      "totalPrice": 1800100,
-      "userId": 1,
-      "id": 3
     }
   ]
 }

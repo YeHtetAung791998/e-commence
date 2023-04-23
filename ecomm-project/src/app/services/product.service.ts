@@ -80,7 +80,7 @@ cartData = new EventEmitter<product[] | []>();
     })
   }
 
-  removeToCart(cartId:number) {
+  removeToCart(cartId:any) {
     return this.http.delete(`http://localhost:3000/cart/${cartId}`)
   }
 
@@ -101,7 +101,7 @@ cartData = new EventEmitter<product[] | []>();
   }
 
   deleteCartItems(cartId:number){
-    return this.http.delete('http://localhost:3000/cart/' + cartId).subscribe((result)=>{
+    return this.http.delete(`http://localhost:3000/cart/${cartId}`).subscribe((result)=>{
       if(result){
         this.cartData.emit([])
       }
@@ -109,6 +109,6 @@ cartData = new EventEmitter<product[] | []>();
   }
 
   cancelOrder(orderId:number){
-    return this.http.delete('http://localhost:3000/orders/' + orderId);
+    return this.http.delete(`http://localhost:3000/orders/${orderId}`);
   }
 }
