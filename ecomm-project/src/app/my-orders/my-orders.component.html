@@ -8,11 +8,12 @@
         <div class="col-sm-2"><span>Action</span></div>
     </div>
 
-    <div class="row order-data">
-        <div class="col-sm-2"><span><img class="order-img" src="https://p7.hiclipart.com/preview/1008/303/692/shopping-cart-icon-product-return-shopping-cart-png.jpg" alt=""></span></div>
-        <div class="col-sm-2"><span>#100</span></div>
-        <div class="col-sm-2"><span>120000</span></div>
+    <div class="row order-data" *ngFor="let order of orderData">
+        <div class="col-sm-2"><span>
+            <img class="order-img" src="https://p7.hiclipart.com/preview/1008/303/692/shopping-cart-icon-product-return-shopping-cart-png.jpg" alt=""></span></div>
+        <div class="col-sm-2"><span>#{{ order.id }}</span></div>
+        <div class="col-sm-2"><span>{{order.totalPrice}}</span></div>
         <div class="col-sm-2"><span>In Process</span></div>
-        <div class="col-sm-2"><span><button class="form-button">Cancel Order</button></span></div>
+        <div class="col-sm-2"><span><button class="form-button" (click)="cancelOrder(order.id)">Cancel Order</button></span></div>
     </div>
 </div>

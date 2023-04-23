@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { order } from '../data-type';
+import { cart, order } from '../data-type';
 import { ProductService } from '../services/product.service';
 
 @Component({
@@ -11,11 +11,13 @@ import { ProductService } from '../services/product.service';
 export class CheckoutComponent implements OnInit {
 
   totalPrice: number | undefined;
+  cartData:cart[] | undefined;
+  orderMsg:string|undefined;
   constructor(private productService: ProductService,private router:Router){}
   ngOnInit(): void {
     this.productService.currentCart().subscribe((result) => {
-      console.log(result)
       let price = 0;
+      this.cartData = result;
       result.forEach((item:any) => {
         if(item.quantity){
           price += (+item.price* + item?.quantity);
@@ -36,10 +38,22 @@ export class CheckoutComponent implements OnInit {
         userId,
         id:undefined
       }
+
+      this.cartData?.forEach(item =>{
+        setTimeout(() => {
+          item.id && this.productService.deleteCartItems(item.id)
+        }, 700);
+          
+      })
+
       this.productService.orderNow(orderData).subscribe( (result) => {
         if(result){
-          alert('Order placed successfully')
-          this.router.navigate(['/my-orders'])
+          this.orderMsg = 'Order placed successfully'
+          setTimeout(() => {
+            this.router.navigate(['/my-orders'])
+            this.orderMsg = undefined;
+          }, 600);
+          
         }
       })
      }

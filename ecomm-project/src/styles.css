@@ -38,6 +38,7 @@ body {
 }
 .message{
     color: green;
+    text-align: center;
 }
 
 .carousel-caption{

@@ -97,6 +97,18 @@ cartData = new EventEmitter<product[] | []>();
   orderList(){
     let userStore = localStorage.getItem('user');
     let userData = userStore && JSON.parse(userStore)[0];
-    return this.http.get('http://localhost:3000/orders=',userData.id);
+    return this.http.get<any>('http://localhost:3000/orders?userId=' + userData.id);
+  }
+
+  deleteCartItems(cartId:number){
+    return this.http.delete('http://localhost:3000/cart/' + cartId).subscribe((result)=>{
+      if(result){
+        this.cartData.emit([])
+      }
+    });
+  }
+
+  cancelOrder(orderId:number){
+    return this.http.delete('http://localhost:3000/orders/' + orderId);
   }
 }
